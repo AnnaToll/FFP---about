@@ -1,0 +1,136 @@
+:root {
+    --navy: rgb(22, 22, 65);
+    --dark: rgb(13, 13, 41);
+    --beige: rgb(201, 176, 147);
+    --sand: #f2efea;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+header {
+    min-height: 120px;
+    position: relative;
+    border-bottom: 1px solid black;
+}
+
+#icons {
+ position: absolute; 
+ right: 10px;
+ top: 10px;  
+ font-size: 20px;
+}
+
+.bi {
+    margin-right: 10px;
+}
+
+
+#logga {
+    font-family: 'marcellus SC', serif;
+    color: black;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 25px;
+    font-size: 30px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 40px 0;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav{
+   text-align:center; 
+   font-size: 13px;
+   margin-top: 10px;
+}
+
+nav a {
+    padding: 10px;
+    text-transform: uppercase;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    border-bottom: 1px solid black;
+}
+
+#search:hover {
+border-bottom: none;
+}
+
+footer {
+    height: 120px;
+    position: relative;
+    border-top: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+address {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    row-gap: 5px;
+}
+
+address p {
+    font-size: 13px;
+    display: inline;
+    font-style: normal;
+}
+
+#logo-footer {
+    display: grid;
+    place-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-family: 'Marcellus SC', serif;
+    font-size: 30px;
+    background-color: rgb(22, 22, 65);
+    color: white;
+}
+
+#follow {
+    font-size: 15px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#social {
+    display: grid;
+    row-gap: 5px;
+}
+
+@media screen and (max-width: 767px){
+    nav a{
+        margin: 0;
+    }
+
+    footer address p {
+        display: none;
+    }
+}
